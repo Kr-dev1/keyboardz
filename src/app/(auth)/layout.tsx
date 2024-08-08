@@ -1,14 +1,16 @@
-
 interface AuthLayoutProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
-import React, { ReactNode,FC } from 'react'
+import Navbar from "@/components/Navbar";
+import React, { ReactNode, FC } from "react";
 
-const AuthLayout: FC<AuthLayoutProps> = ({children}) => {
+const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
   return (
-    <div >{children}</div>
-  )
-}
+    <div>
+      {children}
+    </div>
+  );
+};
 
-export default AuthLayout
+export default AuthLayout;
