@@ -41,6 +41,7 @@ export async function POST(request: Request) {
         isVerified: false,
         hasOrdered: false,
         cartItems: [],
+        previousOrders: [],
       });
       await newUser.save();
     }

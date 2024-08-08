@@ -35,6 +35,7 @@ export interface User extends Document {
   isVerified: boolean;
   hasOrdered: boolean;
   cartItems: CartItem[];
+  previousOrders: CartItem[];
 }
 
 // Updated User schema to include cartItems
@@ -71,6 +72,7 @@ const UserSchema: Schema<User> = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  previousOrders: [CartItemSchema],
 });
 
 const userModel =

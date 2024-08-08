@@ -5,4 +5,5 @@ export interface Apiresponse {
   message: string;
   cartItem?: Array<CartItem>;
   hasOrdered?: boolean;
+  previousOrders?: Array<CartItem>;
 }
