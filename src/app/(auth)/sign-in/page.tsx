@@ -12,7 +12,7 @@ import {
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { signinSchema } from "@/Schema/signin";
+import { signinSchema } from "@/Schema/signinSchema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import axios from "axios";
