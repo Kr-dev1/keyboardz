@@ -33,8 +33,9 @@ const SignUpForm = () => {
     }
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">
+    <div className="flex flex-col justify-center items-center  h-[94vh] bg-gray-100">
+       <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} >
         <div className="space-y-2">
         <FormField
           control={form.control}
@@ -101,6 +102,7 @@ const SignUpForm = () => {
         <Link className="text-blue-500 hover:underline" href='/sign-in'>Sign in</Link>
       </p>
     </Form>
+    </div>
   )
 }
 
