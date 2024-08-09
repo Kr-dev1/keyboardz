@@ -15,7 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { signUpSchema } from "@/Schema/signup";
+import { signUpSchema } from "@/Schema/signupSchema";
 import axios, { AxiosError } from "axios";
 import { Apiresponse } from "@/types/Apiresponse";
 import { useRouter } from "next/navigation";
