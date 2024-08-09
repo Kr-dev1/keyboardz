@@ -31,12 +31,12 @@ const Page = () => {
 
   const onSubmit = async (data: z.infer<typeof verifySchema>) => {
     try {
-      const response = axios.post("/api/verify", { code: data.code, username });
+      const response = axios.post("/api/verifycode", { code: data.code, username });
       toast({
         title: "Success",
         description: "Verification successful",
       });
-      router.replace("/");
+      router.replace("/login");
     } catch (error) {}
   };
 
