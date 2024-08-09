@@ -7,8 +7,7 @@ export async function POST(request: Request) {
     const { username, code } = await request.json();
 
     const decodedUsername = decodeURIComponent(username);
-    const user = await userModel
-    .findOne({ username: decodedUsername });
+    const user = await userModel.findOne({ username: decodedUsername });
     if (!user) {
       return Response.json(
         {
@@ -40,7 +39,7 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     } else {
-      Response.json(
+      return Response.json(
         {
           success: false,
           message: "Incorrect Verification code",
